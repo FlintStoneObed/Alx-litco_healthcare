@@ -36,13 +36,13 @@ router.post(
       req.body.password,
       email_status
     );
-    var token = randomToken(8);
+    const token = randomToken(8);
 
     db.verify(req.body.username, email, token);
 
     db.getuserid(email, function (err, result) {
-      var id = result[0].id;
-      var output =
+      const id = result[0].id;
+      const output =
         `
             <p>Dear  ` +
         username +
@@ -68,15 +68,16 @@ router.post(
       var transporter = nodemailer.createTransport({
         service: "gmail",
         auth: {
-          user: "",
-          pass: "",
+          user: "temijeje@gmail.com",
+          pass: "pjckjnizzpqscysx",
         },
       });
       var mailOptions = {
-        from: "",
-        to: email,
+        from: "temijeje@gmail.com",
+        to: "temijeje@hotmail.com",
         subject: "Email Verification", // Subject line
         html: output, // plain text body
+        text: "verified",
       };
 
       transporter.sendMail(mailOptions, function (err, info) {

@@ -6,7 +6,7 @@ var con = mysql.createConnection({
   host: "localhost",
   user: "root",
   password: "",
-  database: "hms project",
+  database: "hms_project",
 });
 
 con.connect(function (err) {
@@ -37,7 +37,7 @@ module.exports.getuserid = function (email, callback) {
 };
 
 module.exports.verify = function (username, email, token, callback) {
-  var query =
+  const query =
     "insert into `verify` (`username`,`email`,`token`) values ('" +
     username +
     "','" +
@@ -313,7 +313,7 @@ module.exports.findOne = function (email, callback) {
 };
 
 module.exports.temp = function (id, email, token, callback) {
-  var query =
+  const query =
     "insert into `temp` (`id`,`email`,`token`) values ('" +
     id +
     "','" +
@@ -325,13 +325,13 @@ module.exports.temp = function (id, email, token, callback) {
 };
 
 module.exports.checktoken = function (token, callback) {
-  var query = "select *from temp where token='" + token + "'";
+  const query = "select * from temp where token='" + token + "'";
   con.query(query, callback);
   console.log(query);
 };
 
 module.exports.setpassword = function (id, newpassword, callback) {
-  var query =
+  const query =
     "update `users` set `password`='" + newpassword + "' where id=" + id;
   con.query(query, callback);
 };
