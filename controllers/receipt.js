@@ -33,8 +33,4 @@ router.get('/generateslip/:id',function(req,res){
     
 });
 
-
-
-
-
 module.exports =router;
