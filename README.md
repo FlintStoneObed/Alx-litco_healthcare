@@ -121,6 +121,10 @@ Add additional notes about how to deploy this on a live system.
 
 See also the list of [contributors](https://github.com/FlintStoneObed/Alx-litco_healthcare) who participated in this project.
 
+## Demo of the Project
+
+https://bit.ly/litcohealth
+
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
 - Inspiration - Oluwajuwon Falore
