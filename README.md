@@ -16,7 +16,7 @@
 
 ---
 
-<p align="center"> Few lines describing your project.
+<p align="center"> Our project.
     <br> 
 </p>
 
@@ -45,50 +45,57 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them.
 
 ```
-Give examples
+Node.js
 ```
+- [Node.js](https://nodejs.org/en/)
+```
+MySQL
+```
+- [MySQL](https://dev.mysql.com/downloads/)
+```
+Ejs Template
+```
+- [Ejs](https://ejs.co/)
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running.
-
-Say what the step will be
+Development env running.
 
 ```
-Give the example
+npm install
 ```
 
-And repeat
+Nodemon help server
 
 ```
-until finished
+npm run dev
 ```
 
-End with an example of getting some data out of the system or using it for a little demo.
 
 ## 🔧 Running the tests <a name = "tests"></a>
 
-Explain how to run the automated tests for this system.
+Install Xampp to run Back-end
 
 ### Break down into end to end tests
 
-Explain what these tests test and why
+phpMyAdmin can be used to create a database for handling registration, verification, and login authentication functionalities 
 
 ```
-Give an example
+-> Xampp Admin
+ - apache <start>
+ - mysql  <start>
+
+-> Local Terminal
+ - npm run dev
+
+-> Browser Landing Page
+ - localhost:3000/
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ## 🎈 Usage <a name="usage"></a>
 
-Add notes about how to use the system.
+Log in to book appointments with your preferred doctor and browse available medications in the store.
 
 ## 🚀 Deployment <a name = "deployment"></a>
 
@@ -97,20 +104,20 @@ Add additional notes about how to deploy this on a live system.
 ## ⛏️ Built Using <a name = "built_using"></a>
 
 - [NodeJs](https://nodejs.org/en/) - Server Environment
-- [Nodemon](https://www.npmjs.com/package/nodemon) - Node Tool
-- [Nodemailer](https://nodemailer.com/) - EmailEngine
+- [Nodemon](https://www.npmjs.com/package/nodemon) - Node tool for auto-restarting the server
+- [Nodemailer](https://nodemailer.com/) - Email engine for sending emails
 - [MySQL](https://dev.mysql.com/downloads/) - Database
-- [Multer](https://www.npmjs.com/package/multer) - Node Middleware
-- [Express](https://expressjs.com/) - Webapplication Framework
-- [Ejs](https://ejs.co/) - JavaScript Template
-- [Cookie-parser](https://www.npmjs.com/package/cookie-parser) - Cookie
-- [Async](https://www.npmjs.com/package/async) - 
-- [Body-Parser](https://www.npmjs.com/package/body-parser) - Body Parsing Middleware
-- [Path](https://nodejs.org/api/path.html) - Html Documents
-- [Popups](https://www.npmjs.com/package/popups) - Popups
-- [Random-Token](https://www.npmjs.com/package/random-token) - Token
-- [Socket.io](https://www.npmjs.com/package/socket.io/v/2.3.0) - Socket.io
-- [Sweetalert2](https://www.npmjs.com/package/sweetalert2/v/6.6.1?activeTab=readme) - Popup
+- [Multer](https://www.npmjs.com/package/multer) - Middleware for handling file uploads
+- [Express](https://expressjs.com/) - Web application Framework
+- [Ejs](https://ejs.co/) -  JavaScript templating engine
+- [Cookie-parser](https://www.npmjs.com/package/cookie-parser) - Middleware for parsing cookies
+- [Async](https://www.npmjs.com/package/async) - Utility module for managing asynchronous code
+- [Body-Parser](https://www.npmjs.com/package/body-parser) - Middleware for parsing incoming request bodies
+- [Path](https://nodejs.org/api/path.html) - Utility for handling file and directory paths
+- [Popups](https://www.npmjs.com/package/popups) - Library for creating popups
+- [Random-Token](https://www.npmjs.com/package/random-token) - Library for generating random tokens
+- [Socket.io](https://www.npmjs.com/package/socket.io/v/2.3.0) - Real-time communication library
+- [Sweetalert2](https://www.npmjs.com/package/sweetalert2/v/6.6.1?activeTab=readme) - Library for creating beautiful popups
 
 ## ✍️ Authors <a name = "authors"></a>
 
@@ -124,7 +131,3 @@ See also the list of [contributors](https://github.com/FlintStoneObed/Alx-litco_
 ## Demo of the Project
 
 https://bit.ly/litcohealth
-
-## 🎉 Acknowledgements <a name = "acknowledgement"></a>
-
-- Inspiration - Oluwajuwon Falore
